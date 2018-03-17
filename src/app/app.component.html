@@ -49,19 +49,21 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Salg</h4>
+				<h4 class="modal-title">
+					Salg
+					</h4>
 			</div>
 			<div class="modal-body">
 				<form>
 					<div class="form-row">
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="inputBruker">Bruker</label>
 							<select id="inputBruker" class="form-control">
         <option selected>Velg Bruker...</option>
         <option>...</option>
       </select>
 						</div>
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="inputType">Type</label>
 							<select id="inputTyep" class="form-control">
         <option selected>Velg Type...</option>
@@ -69,8 +71,8 @@
       </select>
 						</div>
 					</div>
-					<div class="form-row">
-						<div class="form-group col-md-4">
+					<div class="form-row ">
+						<div class="form-group col-md-4 btn-block">
 							<label for="inputAntall">Antall</label>
 							<select id="inputAntall" class="form-control">
         <option selected>Velg Antall...</option>
@@ -78,11 +80,18 @@
       </select>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary">Kjøp</button>
+					<div class="form-row">
+						<div class="card text-center">
+							<div class="card-body">
+								<h3 class="card-title">Totalt: </h3>
+							</div>
+						</div>
+					</div>
 				</form>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+				<button type="submit" class="btn btn-primary btn-block">Kjøp</button>
+				<button type="button" class="btn btn-default btn-block" data-dismiss="modal">Lukk</button>
 			</div>
 		</div>
 
@@ -99,42 +108,51 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Registrer</h4>
+				<h4 class="modal-title">
+					Registrer
+					</h4>
 			</div>
-			<div class="modal-body">
+			
 				<form>
 					<div class="form-row">
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="inputFNavn">Fornavn</label>
 							<input type="FNavn" class="form-control" id="inputFNavn" placeholder="Fornavn">
 						</div>
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="inputENavn">Etternavn</label>
 							<input type="Enavn" class="form-control" id="inputENavn" placeholder="Etternavn">
 						</div>
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="inputEmail4">Email</label>
 							<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
 						</div>
-						<div class="form-group col-md-6">
-							<label for="inputPassword4">Password</label>
-							<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-						</div>
 					</div>
-					<div class="form-group col-md-6">
+					<div class="form-group col-md-6 btn-block">
 						<label for="inputAddress">Address</label>
 						<input type="text" class="form-control" id="inputAddress" placeholder="Eksempelveg 1">
 					</div>
-					<div class="form-group col-md-6">
+					<div class="form-group col-md-6 btn-block">
 						<label for="inputPostnr">Postnr</label>
 						<input type="postnr" class="form-control" id="inputPostnr" placeholder="Password">
 					</div>
+					<div class="form-row">
+						<div class="card text-center">
+							<div class="card-body">
+								<h3 class="card-title">Navn: </h3>
+							</div>
+						</div>
+					</div>
 					
-					<button type="submit" id="registrer" class="btn btn-primary">Registrer</button>
 				</form>
-			</div>
+			
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+				<button type="submit" id="registrer" class="btn btn-primary btn-block">
+					Registrer
+					</button>
+				<button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+					Lukk
+					</button>
 			</div>
 		</div>
 
@@ -155,14 +173,14 @@
 			<div class="modal-body">
 				<form>
 					<div class="form-row">
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="typeFelger">Type</label>
 							<select id="typeFelger" class="form-control">
         <option selected>Velg Type...</option>
         <option>...</option>
       </select>
 						</div>
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-6 btn-block">
 							<label for="velgProdusent">Produsent</label>
 							<select id="velgProdusent" class="form-control">
         <option selected>Velg Produsent...</option>
@@ -171,7 +189,7 @@
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-4">
+						<div class="form-group col-md-4 btn-block">
 							<label for="velgStørrelse">Størrelse</label>
 							<select id="velgStørrelse" class="form-control">
         <option selected>Velg Størrelse...</option>
@@ -180,7 +198,7 @@
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-4">
+						<div class="form-group col-md-4 btn-block">
 							<label for="velgBredde">Bredde</label>
 							<select id="velgBredde" class="form-control">
         <option selected>Velg Bredde...</option>
@@ -188,21 +206,22 @@
       </select>
 						</div>
 					</div>
-
-					<div class="form-row">
-						<div class="card text-center">
-							<div class="card-body">
-								<h3 class="card-title">Pris: </h3>
-							</div>
-						</div>
+			<div class="form-row">
+				<div class="card text-center">
+					<div class="card-body">
+						<h3 class="card-title">Pris: </h3>
 					</div>
-					<button type="submit" class="btn btn-primary">Kjøp</button>
+				</div>
+			</div>
+					
+					
 				</form>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
-			</div>
-		</div>
 
+				<button type="submit" class="btn btn-primary btn-block">Kjøp</button>
+				<button type="button" class="btn btn-default btn-block" data-dismiss="modal">Lukk</button>
+		</div>
+		</div>
 	</div>
 </div>
